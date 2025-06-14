@@ -1,0 +1,35 @@
+Here are the essential bullet points for MongoDB schema design modeling:
+Core Design Decision Framework
+
+Determine relationship cardinality first: one-to-few, one-to-many, or one-to-squillions
+Ask: Do N-side entities need to exist independently of parent objects?
+Consider read-to-write ratio for denormalization decisions
+
+Three Basic Schema Patterns
+
+Embed (one-to-few): Store related data as arrays within parent document
+Child reference (one-to-many): Store ObjectID references in parent document
+Parent reference (one-to-squillions): Store parent ObjectID in child documents
+
+Six Rules of Thumb
+
+Favor embedding unless there's compelling reason not to
+Don't embed if objects need independent access
+Avoid unbounded arrays - no embedding for hundreds+ items, no ObjectID arrays for thousands+
+Application-level joins are acceptable with proper indexing
+Only denormalize frequently-read, rarely-updated fields
+Match schema to your specific application's query patterns
+
+Advanced Techniques
+
+Two-way referencing: Include references in both directions (trades atomic updates for query efficiency)
+Denormalization: Copy frequently-accessed fields across collections (improves reads, complicates writes)
+Cannot perform atomic updates on denormalized data
+
+Key Constraints
+
+16MB document size limit - affects embedding decisions
+High-cardinality arrays hurt performance
+Denormalization requires maintaining data consistency manually
+Schema design depends entirely on application access patterns
+Add to Conversation
