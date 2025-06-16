@@ -82,3 +82,13 @@ Now you can run the tool through a simple web interface using Streamlit:
 
 
 streamlit run mongo.py
+
+
+
+HERE IS A VIDEO DEMO BELOW:
+
+
+Uploading Screen Recording 2025-06-15 at 11.52.05 PM.mov…
+
+
+
