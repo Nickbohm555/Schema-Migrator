@@ -88,7 +88,11 @@ streamlit run mongo.py
 HERE IS A VIDEO DEMO BELOW:
 
 
-Uploading Screen Recording 2025-06-15 at 11.52.05 PM.mov…
+
+
+https://github.com/user-attachments/assets/5438aab5-2ba0-4e2c-b56a-e430a0cbd507
+
+
 
 
 
