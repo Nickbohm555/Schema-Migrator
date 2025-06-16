@@ -36,6 +36,15 @@ This tool addresses the **Discovery and Analysis** phase of database modernizati
 
 ---
 
+HERE IS A VIDEO DEMO BELOW:
+
+
+
+
+<video src="https://github.com/user-attachments/assets/5438aab5-2ba0-4e2c-b56a-e430a0cbd507" controls autoplay loop muted style="max-width: 100%; height: auto;"></video>
+
+
+
 ## 🚀 How to Run
 
 ### Prerequisites
@@ -84,13 +93,6 @@ Now you can run the tool through a simple web interface using Streamlit:
 streamlit run mongo.py
 
 
-
-HERE IS A VIDEO DEMO BELOW:
-
-
-
-
-https://github.com/user-attachments/assets/5438aab5-2ba0-4e2c-b56a-e430a0cbd507
 
 
 
